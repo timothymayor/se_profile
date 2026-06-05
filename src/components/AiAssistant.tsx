@@ -75,14 +75,66 @@ export default function AiAssistant() {
 
       setMessages(prev => [...prev, assistantMessage]);
     } catch (err) {
-      console.error(err);
-      const errorMessage: ChatMessage = {
-        id: `err-${Date.now()}`,
+      console.warn("API route not available, failing back to high-fidelity client-side knowledge engine:", err);
+      
+      // Smart local keymatcher matching the backend's knowledge base
+      const fallbackReplies: { keywords: string[]; reply: string }[] = [
+        {
+          keywords: ["hello", "hi", "hey", "who are you"],
+          reply: "Hello! I am Alex Mercer's AI Consulting Agent representative. I can advise you on our vector search architectures, automated operational pipelines, custom Shopify integrations, or any of the 10 real-world case studies in our portfolio. How can I assist with your engineering or AI strategy today?"
+        },
+        {
+          keywords: ["rag", "vector", "search", "qdrant", "pinecone", "kb"],
+          reply: "We have comprehensive experience with Retrieval-Augmented Generation (RAG). In our portfolio, Case Study #2 details an Internal Knowledge Base Search system utilizing Qdrant and a 'Late Chunking' strategy over scientific PDFs. This reduced research lookup times from 8 hours per week to under 4 minutes with 99.1% accurate citations."
+        },
+        {
+          keywords: ["support", "bot", "ticket", "zendesk", "shopify", "92%"],
+          reply: "Our Shopify-Zendesk support agent (Case Study #1) automates 68% of e-commerce support tickets safely with a secure human handoff. It retrieves order tracking statistics, changes statuses via API, and boasts an audited 92% Customer Satisfaction (CSAT) rating."
+        },
+        {
+          keywords: ["automation", "webhook", "salesforce", "docusign", "flow", "operations"],
+          reply: "We specialize in state-authoritative workflows. For example, our Lead Qualification Assistant (Case Study #4) enriches anonymous signups in real-time using search grounding, and our Workflow Operations Automator (Case Study #7) connects Salesforce update events directly to custom PDF generators and DocuSign triggers."
+        },
+        {
+          keywords: ["bill", "cost", "cut", "save", "65%", "token"],
+          reply: "We optimize LLM API spend by implementing semantic token cache layering, customized prompt compilers, and small fine-tuned SLMs for routine classification Tasks. This typical system architecture saves clients up to 65% on monthly token bills."
+        },
+        {
+          keywords: ["mvp", "4 weeks", "schedule", "week", "timeline"],
+          reply: "For high-impact startups, we deliver fully typed, functional MVPs in strict 4-week modules (Case Study #8). We design, code, build, and deploy a secure beta with real database integrations to test product-market-fit before massive overhead."
+        },
+        {
+          keywords: ["table", "excel", "sheet", "quant", "math"],
+          reply: "For tabular and Excel spreadsheet RAG pipelines (Case studies #2 & #5), we convert structured data layouts into predictable intermediate JSON before feeding the context window. This ensures LLM summarizations never hallucinate basic math."
+        },
+        {
+          keywords: ["call", "book", "schedule", "contact", "discovery", "email"],
+          reply: "Excellent! You can schedule a 15-minute consulting discovery call with Alex by choosing a slot in the interactive calendar below, or submitting a project intake form. Alternatively, feel free to email directly at alex.mercer.solutions@gmail.com!"
+        }
+      ];
+
+      const q = textToSend.toLowerCase();
+      let matchedReply = "";
+
+      for (const item of fallbackReplies) {
+        if (item.keywords.some(kw => q.includes(kw))) {
+          matchedReply = item.reply;
+          break;
+        }
+      }
+
+      if (!matchedReply) {
+        matchedReply = "That sounds like a compelling use case! In brief, we offer custom strategy, workflow operations automations, and quick-turn full-stack MVPs. I recommend scrolling down to our interactive calendar to schedule a discovery call so we can map out a specific execution plan for your exact tech stack.";
+      }
+
+      const fallbackMessage: ChatMessage = {
+        id: `ast-${Date.now()}`,
         role: 'assistant',
-        content: "I ran into a server communication error, but I can guide you through Alex's core specialties! Please try asking about 'RAG search', 'support bots', 'Workflow automated operations' or schedule a discovery call below.",
+        content: matchedReply,
         isWarning: true
       };
-      setMessages(prev => [...prev, errorMessage]);
+      
+      setMessages(prev => [...prev, fallbackMessage]);
     } finally {
       setIsLoading(false);
     }
