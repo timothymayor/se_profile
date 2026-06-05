@@ -47,7 +47,7 @@ export default function Header({ onNavClick, darkMode, setDarkMode }: HeaderProp
           >
             <div>
               <span className="text-base sm:text-lg font-sans font-bold tracking-tight text-zinc-900 dark:text-zinc-50 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-                Alex Mercer
+                Timothy Mayor
               </span>
               <span className="inline-block w-2.5 h-2.5 bg-teal-600 dark:bg-teal-400 rounded-full ml-1.5 animate-pulse shrink-0"></span>
               <span className="text-[10px] text-zinc-500 dark:text-zinc-400 font-mono block font-medium uppercase tracking-widest leading-tight">

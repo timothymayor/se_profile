@@ -182,17 +182,17 @@ export default function ContactBooking() {
             <div className="border-t border-zinc-200 dark:border-zinc-800/80 pt-5 space-y-3.5">
               <span className="text-[10px] font-mono tracking-widest text-zinc-400 dark:text-zinc-500 uppercase block font-bold">DIGITAL CHANNELS</span>
               <div className="flex flex-col gap-2.5 text-xs text-zinc-600 dark:text-zinc-450">
-                <a href="mailto:alex.mercer.solutions@gmail.com" className="flex items-center gap-2 hover:text-teal-600 transition-colors">
+                <a href="mailto:timothymayor24@gmail.com" className="flex items-center gap-2 hover:text-teal-600 transition-colors">
                   <Mail className="w-4 h-4 text-zinc-400" />
-                  <span>alex.mercer.solutions@gmail.com</span>
+                  <span>timothymayor24@gmail.com</span>
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-teal-600 transition-colors">
+                <a href="https://linkedin.com/in/timothy-mayor" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-teal-600 transition-colors">
                   <Linkedin className="w-4 h-4 text-zinc-400" />
-                  <span>linkedin.com/in/alex-mercer-ai</span>
+                  <span>linkedin.com/in/timothy-mayor</span>
                 </a>
-                <a href="https://github.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-teal-600 transition-colors">
+                <a href="https://github.com/timothymayor" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-teal-600 transition-colors">
                   <Github className="w-4 h-4 text-zinc-400" />
-                  <span>github.com/alex-mercer-systems</span>
+                  <span>github.com/timothymayor</span>
                 </a>
               </div>
             </div>
@@ -222,7 +222,7 @@ export default function ContactBooking() {
                   <div className="bg-zinc-50 dark:bg-zinc-950 p-3 rounded-lg border border-zinc-200 dark:border-zinc-850 text-xs font-mono w-full text-left space-y-1 block">
                     <div><span className="text-teal-600 dark:text-teal-400 font-bold">DATE:</span> {schedulerBooked.date.toUpperCase()}</div>
                     <div><span className="text-teal-600 dark:text-teal-400 font-bold">TIME:</span> {schedulerBooked.time}</div>
-                    <div><span className="text-teal-600 dark:text-teal-400 font-bold">HOST:</span> ALEX MERCER</div>
+                    <div><span className="text-teal-600 dark:text-teal-400 font-bold">HOST:</span> TIMOTHY MAYOR</div>
                     <div><span className="text-teal-600 dark:text-teal-400 font-bold">MEET:</span> Google Meet link attached</div>
                   </div>
                   
@@ -348,7 +348,7 @@ export default function ContactBooking() {
                 <div className="rounded-lg p-5 bg-teal-500/5 dark:bg-teal-950/10 border border-teal-500/20 text-center flex flex-col items-center gap-3 py-10">
                   <Check className="w-8 h-8 text-teal-600 dark:text-teal-400 font-bold bg-teal-50 dark:bg-teal-900 p-1 rounded-full shrink-0" />
                   <span className="text-sm font-bold text-zinc-900 dark:text-zinc-50">Intake Complete</span>
-                  <p className="text-xs text-zinc-505 dark:text-zinc-400 leading-relaxed font-normal">Alex Mercer has received your objectives. Feasibility outlines and scoping notes will be sent to your email inside 24 hours.</p>
+                  <p className="text-xs text-zinc-505 dark:text-zinc-400 leading-relaxed font-normal">Timothy Mayor has received your objectives. Feasibility outlines and scoping notes will be sent to your email inside 24 hours.</p>
                 </div>
               ) : (
                 <form onSubmit={handleFormSubmit} className="flex flex-col gap-3.5 text-left">

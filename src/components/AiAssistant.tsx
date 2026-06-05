@@ -13,7 +13,7 @@ export default function AiAssistant() {
     {
       id: 'welcome',
       role: 'assistant',
-      content: "Hello! I am Alex Mercer's Interactive Consulting Agent proxy, powered by Gemini. I have deep-learning indices on Alex's actual services, architectural designs, and active workflows. \n\nHow can I help you design, scale, or automate your company's AI applications today?"
+      content: "Hello! I am Timothy Mayor's Interactive Consulting Agent proxy, powered by Gemini. I have deep-learning indices on Timothy's actual services, architectural designs, and active workflows. \n\nHow can I help you design, scale, or automate your company's AI applications today?"
     }
   ]);
   const [input, setInput] = useState('');
@@ -81,7 +81,7 @@ export default function AiAssistant() {
       const fallbackReplies: { keywords: string[]; reply: string }[] = [
         {
           keywords: ["hello", "hi", "hey", "who are you"],
-          reply: "Hello! I am Alex Mercer's AI Consulting Agent representative. I can advise you on our vector search architectures, automated operational pipelines, custom Shopify integrations, or any of the 10 real-world case studies in our portfolio. How can I assist with your engineering or AI strategy today?"
+          reply: "Hello! I am Timothy Mayor's AI Consulting Agent representative. I can advise you on our vector search architectures, automated operational pipelines, custom Shopify integrations, or any of the 10 real-world case studies in our portfolio. How can I assist with your engineering or AI strategy today?"
         },
         {
           keywords: ["rag", "vector", "search", "qdrant", "pinecone", "kb"],
@@ -109,7 +109,7 @@ export default function AiAssistant() {
         },
         {
           keywords: ["call", "book", "schedule", "contact", "discovery", "email"],
-          reply: "Excellent! You can schedule a 15-minute consulting discovery call with Alex by choosing a slot in the interactive calendar below, or submitting a project intake form. Alternatively, feel free to email directly at alex.mercer.solutions@gmail.com!"
+          reply: "Excellent! You can schedule a 15-minute consulting discovery call with Timothy by choosing a slot in the interactive calendar below, or submitting a project intake form. Alternatively, feel free to email directly at timothymayor24@gmail.com!"
         }
       ];
 
@@ -145,7 +145,7 @@ export default function AiAssistant() {
       {
         id: 'welcome',
         role: 'assistant',
-        content: "Hello! I am Alex Mercer's Interactive Consulting Agent proxy, powered by Gemini. I have deep-learning indices on Alex's actual services, architectural designs, and active workflows. \n\nHow can I help you design, scale, or automate your company's AI applications today?"
+        content: "Hello! I am Timothy Mayor's Interactive Consulting Agent proxy, powered by Gemini. I have deep-learning indices on Timothy's actual services, architectural designs, and active workflows. \n\nHow can I help you design, scale, or automate your company's AI applications today?"
       }
     ]);
   };
@@ -162,7 +162,7 @@ export default function AiAssistant() {
             AI advisory assistant proxy
           </h2>
           <p className="text-sm text-zinc-500 dark:text-zinc-400 max-w-2xl font-normal leading-relaxed">
-            Query Alex's agentic engineering schemas, ask about custom implementation steps, or get immediate architectural recommendations in real time.
+            Query Timothy's agentic engineering schemas, ask about custom implementation steps, or get immediate architectural recommendations in real time.
           </p>
         </div>
 
@@ -176,7 +176,7 @@ export default function AiAssistant() {
                 <span>Agent Capability Scope</span>
               </h3>
               <p className="text-xs text-zinc-500 dark:text-zinc-450 mb-4 leading-relaxed font-normal">
-                This assistant utilizes custom schema indices covering Alex's actual developments in vector search pipelines, multi-tool webhooks, and secure API caching.
+                This assistant utilizes custom schema indices covering Timothy's actual developments in vector search pipelines, multi-tool webhooks, and secure API caching.
               </p>
               <ul className="space-y-3.5 text-xs text-zinc-600 dark:text-zinc-400">
                 <li className="flex items-start gap-2">
@@ -216,9 +216,9 @@ export default function AiAssistant() {
               {/* Terminal Title Bar */}
               <div className="bg-zinc-50 dark:bg-zinc-900 px-5 py-3 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between">
                 <div className="flex items-center gap-2.5">
-                  <div className="w-2.5 h-2.5 rounded-full bg-teal-500 animate-pulse" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-teal-500" />
                   <div>
-                    <h4 className="text-xs font-bold text-zinc-800 dark:text-zinc-200">Alex Mercer Proxy Agent</h4>
+                    <h4 className="text-xs font-bold text-zinc-800 dark:text-zinc-200">Timothy Mayor Proxy Agent</h4>
                     <span className="text-[10px] text-zinc-400 dark:text-zinc-500 font-mono leading-none block mt-0.5">Gemini-Engine Offline-Index hybrid mode</span>
                   </div>
                 </div>

@@ -18,7 +18,7 @@ export default function Footer({ onNavClick }: FooterProps) {
               <Terminal className="w-4 h-4 text-teal-605" />
             </div>
             <div className="text-left">
-              <span className="text-xs font-bold text-zinc-900 dark:text-zinc-100 tracking-tight block">Alex Mercer</span>
+              <span className="text-xs font-bold text-zinc-900 dark:text-zinc-100 tracking-tight block">Timothy Mayor</span>
               <span className="text-[10px] text-zinc-400 dark:text-zinc-550 font-mono block uppercase">Secure Parsing & AI Advisory</span>
             </div>
           </div>
@@ -51,7 +51,7 @@ export default function Footer({ onNavClick }: FooterProps) {
 
         {/* Legal copyright line */}
         <div className="mt-8 pt-8 border-t border-zinc-150 dark:border-zinc-800/80 flex flex-col sm:flex-row items-center justify-between text-[10px] text-zinc-404 text-zinc-400 dark:text-zinc-500 font-mono gap-4">
-          <span>&copy; {currentYear} Alex Mercer. Software Engineering &amp; AI Systems practice. All rights reserved.</span>
+          <span>&copy; {currentYear} Timothy Mayor. Software Engineering &amp; AI Systems practice. All rights reserved.</span>
           <span className="uppercase text-[9px] tracking-wider">System Rev: v1.80  / Secure Sandbox Integration</span>
         </div>
 

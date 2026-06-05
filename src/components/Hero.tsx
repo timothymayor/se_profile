@@ -34,7 +34,7 @@ export default function Hero({ onNavClick }: HeroProps) {
 
             {/* Warm, Literary Title */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-sans font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 mb-6 leading-[1.1]">
-              Hey, I'm Alex. <br />
+              Hey, I'm Timothy. <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 via-teal-500 to-emerald-500 dark:from-teal-400 dark:via-teal-300 dark:to-emerald-400 font-extrabold">
                 I build robust, stable AI integrations & systems.
               </span>
@@ -47,13 +47,13 @@ export default function Hero({ onNavClick }: HeroProps) {
 
             {/* Quick social links */}
             <div className="flex items-center gap-4 mb-8">
-              <a href="mailto:alex.mercer.solutions@gmail.com" className="text-zinc-500 hover:text-teal-600 dark:hover:text-teal-400 transition-colors" title="Email Coordinate">
+              <a href="mailto:timothymayor24@gmail.com" className="text-zinc-500 hover:text-teal-600 dark:hover:text-teal-400 transition-colors" title="Email Coordinate">
                 <Mail className="w-5 h-5" />
               </a>
-              <a href="https://github.com" target="_blank" rel="noreferrer" referrerPolicy="no-referrer" className="text-zinc-500 hover:text-teal-600 dark:hover:text-teal-400 transition-colors" title="GitHub">
+              <a href="https://github.com/timothymayor" target="_blank" rel="noreferrer" referrerPolicy="no-referrer" className="text-zinc-500 hover:text-teal-600 dark:hover:text-teal-400 transition-colors" title="GitHub">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" referrerPolicy="no-referrer" className="text-zinc-500 hover:text-teal-600 dark:hover:text-teal-400 transition-colors" title="LinkedIn">
+              <a href="https://linkedin.com/in/timothy-mayor" target="_blank" rel="noreferrer" referrerPolicy="no-referrer" className="text-zinc-500 hover:text-teal-600 dark:hover:text-teal-400 transition-colors" title="LinkedIn">
                 <Linkedin className="w-5 h-5" />
               </a>
               <span className="w-1.5 h-1.5 bg-zinc-300 dark:bg-zinc-700 rounded-full"></span>
@@ -90,7 +90,7 @@ export default function Hero({ onNavClick }: HeroProps) {
                   <div className="w-2.5 h-2.5 rounded-full bg-red-400/80" />
                   <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/80" />
                   <div className="w-2.5 h-2.5 rounded-full bg-green-400/80" />
-                  <span className="text-[11px] font-mono font-medium text-zinc-500 dark:text-zinc-400 ml-2">alex-advisor-core.ts</span>
+                  <span className="text-[11px] font-mono font-medium text-zinc-500 dark:text-zinc-400 ml-2">timothy-advisor-core.ts</span>
                 </div>
                 <span className="text-[10px] font-mono text-zinc-400">Node REST OK</span>
               </div>
